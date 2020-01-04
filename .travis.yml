@@ -3,4 +3,4 @@ install:
   - pip install -r requirements-dev.txt
   - pip install .
 script:
-  - pytest
+  - pytest tests
