@@ -1,6 +1,6 @@
 language: python
 install:
   - pip install -r requirements-dev.txt
-  - pip install .
+  - pip install -e .
 script:
   - pytest tests
