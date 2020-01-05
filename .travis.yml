@@ -4,3 +4,10 @@ install:
   - pip install .
 script:
   - pytest tests
+deploy:
+  provider: pypi
+  user: "__token__"
+  password:
+    secure: fx8dWlyGm7d4dLj4752gAdN6L/UQtnMfD1tIbgGoNE1sz56cmI1L8DeDvGQI0pbavn8iZfhkr6lWiPaqi3+l+IJlJkbFtzQJhaFvuYbrKxHYV3RDin/cB74kobyxqv5kqk3+qeeCMmh1BrKEd3+3Ctkure6gBWaAAT1H4NneEcMoos3tc6hNdi2cxgW7nA5VCNkjkTX0EQdLnYkm21wXdNbA1mEg8+ImELP85ViV4VDe6NhwPKoJd91cCqNmDkmYVJQk2fdeMtsAFdowMuZ6ZhneyjUrisgxAuzpVtxzyfEwAEvR6GxNhxTsrONWSBFim2OOe/2vbxKPivlugwhxRNgi1/qHI3sTlARo71+GHFs0nmCBvM5Gi6sE+nL+8yMrm67PVGHn/IOXxuYLtlPSVGli7+/Ng5QZUpP11wbYV7zEjsjwhMfmWdACHa8LFpwLwh6OQaP5mwiOb6LR+62anG+9mVxXMIAX9UEmD6kJFntU+u6gWRWzw5RhhFjOTDLP8sw9R4diCRR7P4WutNfsvb7g8LCb3aktwJqSL2YTJyrPjmxuEKryvxczqEiZalkD2toq1MqXTNkcSBfWwbX2O34iwnerrF2bR401accV0u3QI0dJDH37ahdgTwQLBW55O5aYF+KFf41hfugOpPIJkcvP8L1E/z1iGjlvTRckMbk=
+  on:
+    tags: true
