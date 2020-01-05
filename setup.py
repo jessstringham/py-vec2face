@@ -17,7 +17,6 @@ setup(
     author_email='mail@jessicastringham.net',
     classifiers=[
         'Development Status :: 3 - Alpha',
-        # Indicate who your project is intended for
         'Intended Audience :: Developers',
         'Topic :: Multimedia :: Graphics',
         'Topic :: Artistic Software',
@@ -30,13 +29,13 @@ setup(
     ],
     keywords='visualization',
     package_dir={'': 'src'},
-    packages=find_packages(where='src'),
+    packages=[''],
     python_requires='>=3.5',
     install_requires=['numpy', 'matplotlib'],
     package_data={
         '': ['data/*.npz'],
     },
-    project_urls={  # Optional
+    project_urls={
         'Bug Reports': 'https://github.com/jessstringham/py-vec2face/issues',
         'Source': 'https://github.com/jessstringham/py-vec2face/',
         'More fun': 'https://jessicastringham.net',
