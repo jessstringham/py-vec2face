@@ -14,7 +14,13 @@ The package includes pretrained functions for illustrating data points.
 Initialize by providing the number of dimensions of the data points in the source dataset.
 
 ```python
-v2f = Vec2Face(dims=16)
+from vec2face import Vec2Face
+import numpy as np
+
+DIMS = 16
+
+vec = np.zeros(DIMS)  # for this example, create the face at the origin
+v2f = Vec2Face(dims=DIMS)
 v2f.draw_vec(vec)
 ```
 
